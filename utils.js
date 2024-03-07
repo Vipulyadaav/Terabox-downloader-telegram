@@ -9,7 +9,7 @@ const sendFile = async (item, ctx) => {
       await ctx.replyWithDocument({ source: fileBuffer, filename: 'your_filename.ext' });
     } catch (e) {
       ctx.replyWithMarkdown(
-        `⚠️ ${e.message}\n\n👉 Try manually downloading from [here](${item})\n\n👉 *Maybe This File Is Too Large Or Cannot Accessible From Terabox*`,
+        `⚠️ ${e.message}\n\n👉 Try manlly downloading from [here](${item})\n\n👉 *Maybe This File Is Too Large Or Cannot Accessible From Terabox*`,
       );
     }
   }
